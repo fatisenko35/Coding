@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <style>
+        fieldset{
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+            border-radius: 10px;
+
+            
+        }
+        #submit{
+            margin-left: auto;
+            margin-right: auto;
+             width: 50em;
+
+
+        }
+        body{
+            background-color:#F0F2F5;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset id="personal" >
+            <legend>Kişisel Bilgiler</legend>
+            <label for="name">Adınız:</label>
+            <input type="text" name="name" id="name" placeholder="Adınızı giriniz...">
+            <br>
+
+                <label for="surname">Soyadınız:</label>
+                <input type="surname" name="surname" id="surname" placeholder="Soyadınızı giriniz">
+            <br>
+
+            <label for="yas">Yaşınız:</label>
+            <input type="text" name="age" id="yas" placeholder="Yaşınızı giriniz...">
+            <br>
+
+            <label for="gender">Cinsiyet Seçiniz:</label>
+            <br>
+
+            <input type="radio" name="gender" id="Erkek" value="Erkek">
+            <label for="Erkek">Erkek</label>
+            <br>
+            <input type="radio" name="gender" id="Kadın" value="Kadın">
+            <label for="Kadın">Kadın</label>
+
+        </fieldset>
+        <fieldset id="communication">
+            <legend>İletişim Bilgileri</legend>
+            <label for="tel">Telefon Numaranız:</label>
+            <input type="tel" name="phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
+            <br>
+            <label for="email">Email adresiniz:</label>
+            <input type="email" name="mail" id="email" placeholder="example@example.com">
+            <br>
+            <div class="form-group">
+                <label for="">Adresiniz:</label>
+                <br>
+                <input type="street" 
+                       class="form-control" 
+                       id="autocomplete" 
+                       placeholder="Sokak">
+
+                <input type="text" 
+                       class="form-control" 
+                       id="inputnumber" 
+                       placeholder="Numara">       
+                
+                <input type="city" 
+                       class="form-control" 
+                       id="inputCity" 
+                       placeholder="Şehir">
+            
+                
+                <input type="country" 
+                       class="form-control" 
+                       id="inputCountry" 
+                       placeholder="Ülke">
+              </div>
+
+        </fieldset>
+        <fieldset id="hobby">
+            <legend>İlgi Alanları</legend>
+            <div>
+            <label for="spor">Sevdiğiniz Spor Türleri</label>
+            <br>
+            <input type="checkbox" name="futbol" id="futbol">
+            <label for="futbol">Futbol</label>
+            <br>
+            <input type="checkbox" name="basketbol" id="basketbol">
+            <label for="basketbol">Basketbol</label>
+            <br>
+            <input type="checkbox" name="voleybol" id="voleybol">
+            <label for="voleybol">Voleybol</label>
+            <br>
+            <input type="checkbox" name="tenis" id="tenis">
+            <label for="tenis">Tenis</label>
+            <br>
+            <input type="checkbox" name="diger" id="diger">
+            <label for="diger">Diğer</label>
+            <br>
+            <label for="">Boş Zamanlarınızı Nasıl Değerlendirisiniz? (1'den 10'a kadar puanlayın)</label>
+            <br>
+            <label for="sport">Spor Yapmak</label>
+            <input type="range" id="sport" name="spor" min="0" max="10">
+            <br>
+            <label for="kitap">Kitap Okumak</label>
+            <input type="range" id="kitap"  name="kitap" min="0" max="10">
+            <br>
+            <label for="tiyatro">Tiyatro</label>
+            <input type="range" id="tiyatro"  name="tiyatro" min="0" max="10">
+            <br>
+            <label for="film">Film İzlemek</label>
+            <input type="range" id="film"  name="film" min="0" max="10">
+
+            
+
+            </div>
+
+            
+
+
+        </fieldset>
+
+    <div id="submit">
+        <input type="reset" >
+        <input type="submit" name="Gönder" value="Gönder">
+    </div>
+    </form>
+    
+</body>
+</html>
